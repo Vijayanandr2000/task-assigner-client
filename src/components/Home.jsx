@@ -68,70 +68,71 @@ const Home = () => {
             LOGIN PAGE
           </h2>
         </div>
-        <div className="home"></div>
-        <div className="card-stu">
-          <div
-            className="card"
-            style={{ width: 20 + "rem", height: 300 + "px" }}
-          >
-            <div className="card-head">
-              <h2 className="card-title">Student Login</h2>
-            </div>
-            <div className="card-body">
-              <input
-                type="text"
-                placeholder="Enter your E-mail"
-                onChange={(e) => setMail(e.target.value)}
-                value={mail}
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
-              />
-              <button className="btn btn-primary" onClick={studentLogin}>
-                Login
-              </button>
-              <button
-                className="btn outline-none btn-color"
-                onClick={(e) => history.push("/student")}
-              >
-                Register as a Student
-              </button>
+        <div className="home">
+          <div className="card-stu">
+            <div
+              className="card"
+              style={{ width: 20 + "rem", height: 300 + "px" }}
+            >
+              <div className="card-head">
+                <h2 className="card-title">Student Login</h2>
+              </div>
+              <div className="card-body">
+                <input
+                  type="text"
+                  placeholder="Enter your E-mail"
+                  onChange={(e) => setMail(e.target.value)}
+                  value={mail}
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                />
+                <button className="btn btn-primary" onClick={studentLogin}>
+                  Login
+                </button>
+                <button
+                  className="btn outline-none btn-color"
+                  onClick={(e) => history.push("/student")}
+                >
+                  Register as a Student
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card-staff">
-          <div
-            className="card"
-            style={{ width: 20 + "rem", height: 300 + "px" }}
-          >
-            <div className="card-head">
-              <h2 className="card-title">Staff Login</h2>
-            </div>
-            <div className="card-body">
-              <input
-                type="text"
-                value={mails}
-                placeholder="Enter your E-mail"
-                onChange={(e) => setMails(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                value={passwords}
-                onChange={(e) => setPasswords(e.target.value)}
-              />
-              <button className="btn btn-primary" onClick={staffLogin}>
-                Login
-              </button>
-              <button
-                className="btn outline-none btn-color"
-                onClick={() => history.push("/staff")}
-              >
-                Register as a Staff
-              </button>
+          <div className="card-staff">
+            <div
+              className="card ml-3"
+              style={{ width: 20 + "rem", height: 300 + "px" }}
+            >
+              <div className="card-head">
+                <h2 className="card-title">Staff Login</h2>
+              </div>
+              <div className="card-body">
+                <input
+                  type="text"
+                  value={mails}
+                  placeholder="Enter your E-mail"
+                  onChange={(e) => setMails(e.target.value)}
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  value={passwords}
+                  onChange={(e) => setPasswords(e.target.value)}
+                />
+                <button className="btn btn-primary" onClick={staffLogin}>
+                  Login
+                </button>
+                <button
+                  className="btn outline-none btn-color"
+                  onClick={() => history.push("/staff")}
+                >
+                  Register as a Staff
+                </button>
+              </div>
             </div>
           </div>
         </div>
