@@ -62,14 +62,13 @@ const Home = () => {
   };
   return (
     <div>
-      <div className="home">
-        <div className="container">
-          <div className="card-head">
-            <h2 className="card-title mb-3 text-center text-danger">
-              LOGIN PAGE
-            </h2>
-          </div>
+      <div className="container">
+        <div className="card-head">
+          <h2 className="card-title mb-3 text-center text-danger">
+            LOGIN PAGE
+          </h2>
         </div>
+        <div className="home"></div>
         <div className="card-stu">
           <div
             className="card"
